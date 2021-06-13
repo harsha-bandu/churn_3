@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 app = Flask(__name__)
-filename = 'churn.pkl'
+filename = 'churn_v1.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 @app.route('/')
